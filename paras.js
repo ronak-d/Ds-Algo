@@ -29,7 +29,7 @@ const Para = () =>{
             stack[stack.length-1] == "(";
             stack.pop();
         }else{
-            
+            continue;
         }
     }
     if(stack.length !== 0){
