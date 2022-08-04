@@ -28,7 +28,7 @@ const Para = () =>{
         else if(input[i] == ')'){
             stack[stack.length-1] == "(";
             stack.pop();
-        }
+        }else{}
     }
     if(stack.length !== 0){
         console.log(stack)
