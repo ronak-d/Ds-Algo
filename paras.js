@@ -29,7 +29,8 @@ const Para = () =>{
             stack[stack.length-1] == "(";
             stack.pop();
         }else{
-            continue;
+            continue; // continued is used because if any number or anything else
+                      // came in input it will be ignored and would check for parentheses only.
         }
     }
     if(stack.length !== 0){
