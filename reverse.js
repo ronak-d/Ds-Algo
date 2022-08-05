@@ -30,7 +30,7 @@
 function runProgram(input){
     console.log(input);
 }
-if (process.env.USER === "") {
+if (process.env.USER === "") { // dont know what to write
   runProgram(`hello`);
 } else {
   process.stdin.resume();
