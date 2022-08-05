@@ -1,8 +1,9 @@
 // ques - find the third largest number;
 
 const arr = [1,2,3,4,5,6,7,8,9,10,11,12,22,34,222];
-const arr2 = [414,2,43,43,5,26,71,85,9,10,11,12,22,341,222];
 // arr output = 34 = second maxm in an arr.
+const arr2 = [414,2,43,43,5,26,71,85,9,10,11,12,22,341,222];
+// arr output = 414 = second maxm in an arr.
 
 // as this is sorted array we can find the maxm from arr.length-1
 // and second maxm can be the arr.length-2;
