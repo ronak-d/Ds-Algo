@@ -31,7 +31,11 @@ function runProgram(input){
     console.log(input);
 }
 if (process.env.USER === "") { // dont know what to write
-  runProgram(`hello`);         // this takes input what to run plate for
+  runProgram(`2
+  4 2
+  1 2 3 4
+  5 3
+  10 20 30 40 50`);         // this takes input what to run boilerplate.
 } else {
   process.stdin.resume();
   process.stdin.setEncoding("ascii");
