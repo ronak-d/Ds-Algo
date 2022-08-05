@@ -31,7 +31,7 @@ function runProgram(input){
     console.log(input);
 }
 if (process.env.USER === "") { // dont know what to write
-  runProgram(`hello`);
+  runProgram(`hello`);         // this takes input what to run plate for
 } else {
   process.stdin.resume();
   process.stdin.setEncoding("ascii");
