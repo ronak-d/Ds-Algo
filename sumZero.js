@@ -14,7 +14,7 @@ const findP = ()=>{
 
             if(arr[i] - arr[j] == 0){
 
-                console.log(`${arr[i]} - ${arr[j]} = 0`) // shows which pair is havong 0 as output.
+                console.log(`${arr[i]} - ${arr[j]} = 0`) // shows which pair is having 0 as output.
 
                 count++;
             }
