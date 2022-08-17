@@ -1,6 +1,6 @@
 // Ques - Find the pair in an arr where output = 0;
 
-let arr = [-5,-4,-3,-4,4,-5,3];
+let arr = [-5,-4,-3,4,-5,3];
 
 // how many pairs are there which will be paired resulting 0;
 // maintain counter for that pair.
@@ -14,16 +14,16 @@ function sumzero(arr) {
     let right = arr.length-1;
     let counter = 0;
 
-    arr.sort((a,b)=>{a-b})
-    console.log(arr);
+    let farr = arr.sort((a,b)=>(a-b))
+    console.log(farr);
 
     while(left < right){
 
-        let sumpair = arr[left]+arr[right];
+        let sumpair = farr[left]+farr[right];
 
         if(sumpair === 0){
-            counter++;
-            return (arr[left],arr[right]);
+            console.log(farr[left],farr[right]);
+            return counter++;
         }
         else if(sumpair > 0){
             right--;
@@ -35,5 +35,9 @@ function sumzero(arr) {
 
 }
 
+// sumzero(arr)
 let ans = sumzero(arr);
 console.log(ans);
+
+
+// this only working for single pair work on multiple pair
