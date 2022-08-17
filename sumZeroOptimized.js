@@ -11,6 +11,8 @@ function sumzero(arr) {
     let right = arr.length-1;
     let counter = 0;
 
+    arr.sort((a,b)=>{a-b})
+
     while(left < right){
 
         let sumpair = arr[left]+arr[right];
@@ -20,7 +22,10 @@ function sumzero(arr) {
             return (arr[left],arr[right]);
         }
         else if(sumpair > 0){
-
+            right--;
+        }
+        else{
+            left++;
         }
     }
 
