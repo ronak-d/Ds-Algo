@@ -2,7 +2,7 @@
 
 let arr = [-5,-4,-3,-4,4,-5,3];
 
-// how many pairs are there which will be paired causes 0;
+// how many pairs are there which will be paired resulting 0;
 // maintain counter for that pair.
 
 function sumzero(arr) {
@@ -20,7 +20,7 @@ function sumzero(arr) {
             return (arr[left],arr[right]);
         }
         else if(sumpair > 0){
-            
+
         }
     }
 
