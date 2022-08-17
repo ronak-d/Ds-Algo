@@ -28,3 +28,5 @@ const findP = ()=>{
 
 let iszero = findP(arr);
 console.log(iszero);
+
+// TC = O(n^2) - Quadratic time complexity.
