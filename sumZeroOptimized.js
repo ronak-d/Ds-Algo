@@ -5,6 +5,9 @@ let arr = [-5,-4,-3,-4,4,-5,3];
 // how many pairs are there which will be paired resulting 0;
 // maintain counter for that pair.
 
+// Using Two Pointer 
+// Time complexity will be O(N) because running on a single loop;
+
 function sumzero(arr) {
 
     let left = 0;
@@ -12,6 +15,7 @@ function sumzero(arr) {
     let counter = 0;
 
     arr.sort((a,b)=>{a-b})
+    console.log(arr);
 
     while(left < right){
 
@@ -30,3 +34,6 @@ function sumzero(arr) {
     }
 
 }
+
+let ans = sumzero(arr);
+console.log(ans);
