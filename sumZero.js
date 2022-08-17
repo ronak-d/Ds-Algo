@@ -19,7 +19,7 @@ const findP = ()=>{
                 count++;
             }
             else{
-                continue;
+                continue
             }
         }
     }
