@@ -20,19 +20,26 @@ Explanation: You will always arrive at index 3 no matter what. Its maximum jump 
 var canJump = function(nums) {
     let jump = nums[0];
     let reach = nums[jump];   //2 index = 1;  // index = 3  // index = 4
-    
-    while(reach !== 0) {
-        if(reach == nums.length - 1) {
-            return true;
-        }
-        else if(nums[reach] !== 0){
-            reach = reach + nums[reach]  // 2 = 2+1 index 3 // 3 = 3+1 index 4
-        }
-        else{
-            return false;
+        
+    if(reach === 0){
+        return false;
+    }
+    else{
+        while(reach !== 0) {
+            
+            if(reach == nums.length - 1) {
+                return true;
+            }
+            else if(nums[reach] !== 0){
+                reach = reach + nums[reach]  // 2 = 2+1 index 3 // 3 = 3+1 index 4
+                console.log(reach);
+            }
+            else {
+                return false;
+            }
         }
     }
 }
 
-let jump = canJump([1,0,1,1,4]);
+let jump = canJump([2,0,2,0,4]);
 console.log(jump);
